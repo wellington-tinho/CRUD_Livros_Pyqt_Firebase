@@ -36,19 +36,15 @@ class Ui_MainWindow(object):
     def _on_button_clicked(self):
         email= self.inputUsuario.text()
         password = self.inputSenha.text()
-        print(email, password)
-
         global firebase
         #Criando autenticação
         auth = firebase.auth()
         try:
-        #inserindo dados da autenticação
-            user = auth.create_user_with_email_and_password(email, password)
-            #validando o email
-            auth.send_email_verification(user['idToken'])
-            print("cadastro iniciado com sucesso entre no seu email ")
+            user = auth.sign_in_with_email_and_password(email, password)
+            print("Login successful")
         except :
-            print("esta conta ja foi cadastrada")
+            print("ocorreu um erro ao se logar no sistema")
+            
 
 
 

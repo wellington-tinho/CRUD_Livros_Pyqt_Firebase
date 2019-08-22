@@ -9,6 +9,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_CadastroWindow(object):
+
+    
     def setupUi(self, CadastroWindow):
         CadastroWindow.setObjectName("CadastroWindow")
         CadastroWindow.resize(886, 660)

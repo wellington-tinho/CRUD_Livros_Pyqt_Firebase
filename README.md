@@ -1,4 +1,4 @@
-# CRUD_Livros_Pyqt_Firebase
+# CRUD de Livros com Pyqt e Firebase
 <br><b>Introdução:</b><br>
 O projeto é um sistema de cadastro de livros de uma biblioteca com uma interface Desktop (com GUI) que usa o Firebase para armazenar os dados e a autenticação do usuário. Trabalho da disciplina de Sistemas Distribuídos do Curso de Sistemas de Informação pela Universidade Federal do Piauí - UFPI (CSHNB).<br>
 
@@ -10,7 +10,8 @@ Todo o projeto está sendo desenvolvido na linguagem de programação python em 
 Requisito Funcional do Sistema: CRUD para os seguintes campos: 
 * Título do livro 
 * Autor principal 
-* Quantidade de páginas o	Ano de publicação 
+* Quantidade de páginas 	
+* Ano de publicação 
 
 
 ### Executando o Sistema
