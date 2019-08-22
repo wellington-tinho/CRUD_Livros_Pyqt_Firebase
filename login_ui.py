@@ -3,11 +3,27 @@
 # Form implementation generated from reading ui file 'login.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.2
-#
+# 
 # WARNING! All changes made in this file will be lost!
-from controler import Novo_usuario
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Inicial_ui import Ui_InicialWindow
+
+import pyrebase 
+
+config = {
+       "apiKey": "AIzaSyAyjcUdh7IvqgTAeGHWmsnzL0Yrec3kI_s",
+        "authDomain": "coffee-5ecbc.firebaseapp.com",
+        "databaseURL": "https://coffee-5ecbc.firebaseio.com",
+        "projectId": "coffee-5ecbc",
+        "storageBucket": "coffee-5ecbc.appspot.com",
+        "messagingSenderId": "834785170845",
+        "appId": "1:834785170845:web:3f7b3b3a7956acd8"
+}
+
+
+#inicializando o app
+firebase = pyrebase.initialize_app(config)
+
 
 class Ui_MainWindow(object):
 
@@ -18,9 +34,22 @@ class Ui_MainWindow(object):
         self.window.show()
 
     def _on_button_clicked(self):
-        user = self.inputUsuario.text()
-        senha = self.inputSenha.text()
-        controler.novo_usuario(user,senha)
+        email= self.inputUsuario.text()
+        password = self.inputSenha.text()
+        print(email, password)
+
+        global firebase
+        #Criando autenticação
+        auth = firebase.auth()
+        try:
+        #inserindo dados da autenticação
+            user = auth.create_user_with_email_and_password(email, password)
+            #validando o email
+            auth.send_email_verification(user['idToken'])
+            print("cadastro iniciado com sucesso entre no seu email ")
+        except :
+            print("esta conta ja foi cadastrada")
+
 
 
 
