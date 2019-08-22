@@ -10,7 +10,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_CadastroWindow(object):
 
-    
+
+    def _on_button_clicked(self):
+        titulo= self.titulo.text()
+        Autor = self.Autor.text()
+        Ano = self.Ano.text()
+
     def setupUi(self, CadastroWindow):
         CadastroWindow.setObjectName("CadastroWindow")
         CadastroWindow.resize(886, 660)
