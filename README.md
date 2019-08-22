@@ -6,7 +6,7 @@ O projeto é um sistema de cadastro de livros de uma biblioteca com uma interfac
 Uma determinada Biblioteca precisa de um sistema de cadastro de livros para melhor organização dos seu estoque e controle dos livros, o sistema iria funcionar de forma básica, contendo apenas as funcionalidades de um CRUD (cadastrar, buscar, alterar e deletar).
 Todo o projeto está sendo desenvolvido na linguagem de programação python em sua versão 3.7, e para criação de interface gráfica do projeto foi utilizado a biblioteca PyQt5Designer, tendo como fonte a própria documentação da linguagem, para armazenamento dos dados estamos utilizando o Firebase.
 
-###Principais funcionalidades:
+<br><b>Principais funcionalidades:</b><br>
 Requisito Funcional do Sistema: CRUD para os seguintes campos: 
 * Título do livro 
 * Autor principal 
