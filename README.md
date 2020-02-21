@@ -27,7 +27,7 @@ Para Iniciar o sistema, execute o arquivo main.py no prompt de comando de seu SO
 
 A primeira tela exibida pelo sistema é a tela de login, responsável por realizar a autenticação do usuário e permitir seu acesso à aplicação. Caso o usuário ainda não possua uma conta, poderá efetuar seu cadastro ao pressionar o botão "Cadastre-se".
 
-## Colaboradores do projetp
+## Colaboradores do projeto
 
 * Wellington Rodrigues de Sousa - [wrtinho](<https://github.com/wrtinho/>)
 * Thamyres dos Anjos Menezes - [thamymnz](<https://github.com/thamymnz/>)
